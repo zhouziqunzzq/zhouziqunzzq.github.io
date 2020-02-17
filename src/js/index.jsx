@@ -64,12 +64,16 @@ class App extends React.Component {
                             </span>
                         </h1>
                         <div className="labels">
-                            <a alt="home" className="label" href="https://渡边曜.我爱你/">
+                            <a alt="home" className="label" href="https://blog.cool2645.com/Bittersweet/">
                                 <i aria-hidden="true" className="fa fa-map-marker"></i>
                                 <span className="title">
                                     曜の船
                                 </span>
-                                <span className="link">渡边曜.我爱你</span>
+                                <span className="link">
+                                    <FormattedMessage
+                                        id='blogLink'
+                                    />
+                                </span>
                             </a>
                             <div alt="languages" className="label">
                                 <i aria-hidden="true" className="fa fa-language"></i>
@@ -83,14 +87,14 @@ class App extends React.Component {
                                     <a href="javascript:;" className="link" onClick={(e) => this.handleLocaleChange("en",e)}>English</a> / {" "}
                                     <a href="javascript:;" className="link" onClick={(e) => this.handleLocaleChange("ja",e)}>日本語</a></span>
                             </div>
-                            <a alt="education" className="label" href="http://www.neu.edu.cn/">
+                            <a alt="education" className="label" href="https://www.usc.edu/">
                                 <i aria-hidden="true" className="fa fa-university"></i>
                                 <span className="title">
                                     <FormattedMessage
                                         id='currentEdu'
                                     />
                                 </span>
-                                <span className="content">Northeastern University(CN)</span>
+                                <span className="content">University of Southern California</span>
                             </a>
                         </div>
                         <div className="labels">
@@ -115,6 +119,9 @@ class App extends React.Component {
                                 <span className="content">Arch</span>
                                 <i aria-hidden="true" className="fa fa-android"></i>
                                 <span className="content">MIUI</span>
+                                <span className="content">LineageOS</span>
+                                <i aria-hidden="true" className="fa fa-apple"></i>
+                                <span className="content">iPadOS</span>
                             </div>
                         </div>
                     </div>
@@ -284,7 +291,7 @@ class App extends React.Component {
                             <FormattedMessage
                                 id='cpright'
                             />{" "}
-                            © 2018&nbsp;
+                            © 2020&nbsp;
                             <a className="link"
                                href="https://github.com/zhouziqunzzq/zhouziqunzzq.github.io"
                                target="_blank">zhouziqunzzq
